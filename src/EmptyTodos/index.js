@@ -1,4 +1,4 @@
-// import './EmptyTodos.css';
+import './EmptyTodos.css';
 import React from 'react';
 
 function EmptyTodos(){
@@ -6,7 +6,7 @@ function EmptyTodos(){
 
     return(
       
-        <p>Create a TODO..</p>
+        <p class="EmptyTodos">Create a TODO</p>
       
     );
   }
