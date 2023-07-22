@@ -3,21 +3,25 @@ import './CreateTodoButtom.css'
 import React from 'react';
 
 
+// const {
+//     setOpenModal,
+//     openModal,
+// } = React.useContext(TodoContext);
 function CreateTodoButtom({setOpenModal}){
-    // const {
-    //     setOpenModal,
-    //     openModal,
-    // } = React.useContext(TodoContext);
     return(
       <button 
         className="AddTODO"
         onClick={
-          () => {
-            setOpenModal(state => !state);
-          }
+        () => {
+          setOpenModal(state => !state);
         }
+      }
         
-      > + </button>
+      > 
+        <div className="icon-container">
+          <span>+</span>
+        </div>
+      </button>
     )
   }
 

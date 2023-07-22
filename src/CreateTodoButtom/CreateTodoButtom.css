@@ -1,26 +1,33 @@
+
 .AddTODO {
-    background-color: #98ca3f;
-    box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 50px;
-    position: fixed;
-    bottom: 24px;
-    right: 24px;
-    font-weight: bold;
-    color: #03091e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 64px;
-    width: 64px;
-    z-index: 1;
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1;
+  width: 64px;
+  height: 64px;
+  background-color: #98ca3f;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 50px;
+  font-weight: 700;
+  color: #03091e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
   
-    transform: rotate(0);
-    transition: .3s ease;
-  }
-  
-  .AddTODO:hover {
-    transform: rotate(224deg);
-  }
+}
+
+.icon-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+}
+
+.AddTODO:hover {
+  transform-origin: center;
+  transform: rotate(180deg);
+}
