@@ -24,3 +24,6 @@
 .TodoFilter:focus {
   outline-color: #61DAFA;
 }
+.TodoFilter:disabled{
+  opacity: 25%;
+}

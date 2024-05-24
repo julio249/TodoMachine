@@ -1,14 +1,8 @@
 import './TodoFilter.css';
 import React from 'react';
-import { TodoContext } from '../TodoContext';
 
-function TodoFilter(){
-  const {
-    searchValue,
-    setSearchValue,
-  } = React.useContext(TodoContext);
-
-
+function TodoFilter({searchValue, setSearchValue, loading}){
+  
     return(
       <input 
         className="TodoFilter"
@@ -17,6 +11,7 @@ function TodoFilter(){
         onChange={ (event) => {
           setSearchValue(event.target.value);
         }}
+        disabled={loading}//input is disabled when loading is true
         
       />
     );
