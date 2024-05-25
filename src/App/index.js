@@ -10,10 +10,12 @@ import { TodosLoading } from '../TodosLoading';
 import { TodosError } from '../TodosError';
 import { EmptyTodos } from '../EmptyTodos';
 import { Modal } from '../Modal';
-import { TodoForm } from '../TodoForm'
+import { TodoForm } from '../TodoForm';
 import { ChangeAlert } from '../ChangeAlert';
 
 import { TodoHeader } from '../TodoHeader';
+
+import './EmptySearchedTodos.css'
 
 
 
@@ -70,7 +72,7 @@ function App() {
         onLoading={() => <TodosLoading/>}
         onEmptyTodos={() => <EmptyTodos/>}
         onEmptySearchedTodos={(searchedValue) => 
-          <p>no results for {searchedValue}</p>
+          <p className='EmptySearchedTodos'>no results for {searchedValue}</p>
         }
         //render Prop:
         // render={todo => (

@@ -1,7 +1,7 @@
 .TodoFilter {
   background: #F9FBFC;
   display: flex;
-  border-radius: 10px solid #202329;
+  border-radius: 30px ;
   margin: 0 24px;
   height: 64px;
   width: calc(100% - 64px);
